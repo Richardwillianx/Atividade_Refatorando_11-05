@@ -1,0 +1,19 @@
+var execute = function () {
+    var a = 6;
+    var b = 6;
+    var c = 6;
+    if (!(a < b + c && b < a + c && c < a + b)) {
+        console.log("Os números não foram um triângulo");
+        return;
+    }
+    if (a === b || a === c || b === c) {
+        console.log("Trângulo isósceles");
+    }
+    if (a !== b && b !== c && a !== c) {
+        console.log("Trângulo escaleno");
+    }
+    if (a === b && b === c) {
+        console.log("Trângulo equilatero");
+    }
+};
+execute();
